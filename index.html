@@ -1,49 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	 <!--Responsive Mobile Meta Tag-->
+    <meta charset="UTF-8">
+    <!--Responsive Mobile Meta Tag-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Gif Tastic</title>
-    
-        <!--Bootstrap links, CSS-->
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!--Bootstrap links, CSS-->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 
 </head>
+
 <body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Movie Gifs</h1>
+        </div>
+        <div class="container mt-5">
+            <form>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for Gifs here"
+                    id="user-entry">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" style="width: 200px" type="button"
+                            id="add-movie">Add Movie</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <br>
+        <div class="row">
+            <div>
+                <div class="d-flex flex-row" id="preload-buttons">
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-<div class="container">	
-	<br>
-	<br>
-	<div class="row text-center">
-		<div>
-			<form role="d-flex flex-wrap form">
-				<input class="d-flex form-control text-center" id="inputForm" type="text" placeholder="Search for Gifs">
-				<input class="d-flex btn btn-primary" id="emptyGifs" value="clear-gifs"></input>
-			</form>
-		</div>
-	</div>
+    <div class="row-center">
+        <div class="text-center">
+            <div id="gifs"></div>
+        </div>
+    </div>
 
-	<div class="row">
-		<div class="col-sm-4 text-center">
-			<div id="buttons">
-				<h2>Top 5 Trending GIFS</h2>
-			</div>			
-		</div>
-		<br>
-		<div class="col-sm-8 text-center">
-			<div id="gifs"></div>
-		</div>
-	</div>
-</div>
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="assets/javascript/gif2.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="./assets/javascript/index.js"></script>
 </body>
+
 </html>
